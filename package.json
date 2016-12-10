@@ -1,0 +1,27 @@
+{
+  "name": "jsMinimalSetup",
+  "version": "1.0.0",
+  "description": "minimal javascript project set up",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/B4bharat/jsMinimalSetup",
+    "type": "git"
+  },
+  "author": "Bharat Poptwani",
+  "license": "MIT",
+  "scripts": {
+    "lint": "jshint .",
+    "validate": "npm ls"
+  },
+  "pre-commit": [
+    "lint",
+    "validate",
+    "test"
+  ],
+  "dependencies": {
+    "ava": "^0.17.0",
+    "chokidar-cli": "^1.2.0",
+    "precommit-hook": "^3.0.0",
+    "standard": "^8.6.0"
+  }
+}
